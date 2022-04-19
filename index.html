@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, 
+        initial-scale=1.0, 
+        user-scalable=no"
+    />
+    <title>Tiles</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body id="content">
+    <form id="menu">
+      <button type="button" title="Clear Tiles" id="reset">Reset</button>
+      <button type="button" id="wash">Wash</button>
+      <select name="Level" id="levelSelect">
+      </select>
+      <select name="Lesson" id="lessonSelect">
+      </select>
+      <button type="button" id="next">Next Tile</button>
+      <button type="button" class="fullscreen" id="fullscreen">Max</button>
+    </form>
+    <div id="outerContainer">
+      <div id="tiles"></div>
+    </div>
+    <script src="tiles.js"></script>
+  </body>
+</html>
