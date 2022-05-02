@@ -1,0 +1,22 @@
+@media screen and (min-width: 32.5em) {
+  header,
+  footer {
+    border-radius: 10px;
+    display: table;
+    padding: unset;
+  }
+
+  header img {
+    float: left;
+  }
+
+  header h1 {
+    padding: 1.4em 0;
+  }
+
+  body {
+    margin: 0 auto;
+    padding-top: 1em;
+    max-width: 500px;
+  }
+}
