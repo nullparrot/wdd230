@@ -4,6 +4,8 @@
     border-radius: 10px;
     display: table;
     padding: unset;
+    max-width: unset;
+    width: 100%;
   }
 
   header img {

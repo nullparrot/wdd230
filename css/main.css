@@ -25,7 +25,7 @@ footer {
   background-color: var(--secondary-color);
   font-family: var(--headline-font);
   color: white;
-  width: 100%;
+  max-width: 100%;
   text-align: center;
   vertical-align: middle;
   padding: 1em;
