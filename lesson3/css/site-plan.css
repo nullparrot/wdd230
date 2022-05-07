@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;600&family=Open+Sans:wght@300;600&family=Roboto+Mono:wght@300;400&display=swap");
+
+:root {
+  --headline-font: "Inconsolata", monospace;
+  --body-font: "Roboto Mono", monospace;
+  --primary-color: #3e8989;
+  --secondary-color: #373f51;
+  --accent-1: #eebfc2;
+  --accent-2: #dbd053;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--headline-font);
+  font-weight: 600;
+}
+
+header, footer {
+  background-color: var(--secondary-color);
+  font-family: var(--headline-font);
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+header img {
+  width: 100px;
+  filter: drop-shadow(0 0 8px black);
+}
+
+main {
+  padding: 1em;
+  font-family: var(--body-font);
+}
+
+.footer-copyright {
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-timestamp {
+  font-size: 12px;
+  color: var(--accent-1);
+  margin: 0;
+}
+
+@media screen and (min-width: 32.5em) {
+    header{
+      border-radius: 10px;
+      align-items: center;
+    }
+  
+    body {
+      margin: 0 auto;
+      padding-top: 1em;
+      max-width: 1000px;
+    }
+  
+    footer{
+      border-radius: 10px;
+    }
+  }
