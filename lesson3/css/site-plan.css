@@ -40,7 +40,7 @@ menu {
   padding: 0;
   font-family: var(--headline-font);
   font-size: 24px;
-  line-height: 40px;
+  line-height: 46px;
   margin: 0;
 }
 
@@ -54,7 +54,7 @@ menu a {
 
 menu a:hover,
 menu a:active {
-  background-color: #666666;
+  background-color: #D3C2FF;
 }
 
 menu hr{
