@@ -3,10 +3,12 @@
 :root {
   --headline-font: "Inconsolata", monospace;
   --body-font: "Roboto Mono", monospace;
-  --primary-color: #3e8989;
-  --secondary-color: #373f51;
-  --accent-1: #eebfc2;
-  --accent-2: #dbd053;
+  --background-color: #F5F5F5;
+  --primary-color: #3C3C3C;
+  --secondary-color: #087E8B;
+  --header-color: #065760;
+  --accent-1: #E4D9FF;
+  --accent-2: #FAF2A1;
 }
 
 h1,
@@ -17,14 +19,13 @@ h5,
 h6 {
   font-family: var(--headline-font);
   font-weight: 600;
+  color: var(--primary-color);
 }
 
 header,
 footer {
-  background-color: var(--secondary-color);
+background-color: var(--accent-1);
   font-family: var(--headline-font);
-  color: white;
-  padding: 1em;
   text-align: center;
 }
 
@@ -44,16 +45,23 @@ menu {
 }
 
 menu a {
-  background-color: var(--secondary-color);
+  /*background-color: var(--primary-color);
+  color: white;*/
+  color: var(--primary-color);
   width: 100%;
   text-decoration: none;
-  color: white;
-  border-top: 1px solid white;
 }
 
 menu a:hover,
 menu a:active {
-  background-color: var(--primary-color);
+  background-color: #666666;
+}
+
+menu hr{
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0
 }
 
 main {
@@ -84,9 +92,14 @@ td {
   padding: 5px;
 }
 
-#headSample {
+#headerColor{
+    background-color: var(--accent-1);
+}
+
+#headSample, header h1 {
   font-family: var(--headline-font);
-  font-size: 36px;
+  font-size: 40px;
+  margin: 0;
 }
 
 #navSample,
@@ -97,21 +110,37 @@ td {
 
 @media screen and (min-width: 32.5em) {
   header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+  }
+
+  header h1{
+      margin: 0 1em;
   }
 
   menu {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding-top: 0;
   }
 
   menu a {
-    border: 1px solid white;
+    width: fit-content;
+    padding: 0 10px;
+    height: 100%;
+    margin-top: 0;
   }
 
-  body {
+  menu hr{ 
+      width: 0;
+      height: 40px;
+      border: .5px solid black;
+  }
+
+  main {
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 1500px;
   }
 }
