@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+
+
+
+header,
+footer {
+  background-color: #777;
+  padding: 8px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h2 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 12px;
+  }
+h6{
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+/*Header Styles*/
+#header-top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  align-items: center;
+}
+
+#header-logo {
+  height: 34px;
+  float: left;
+  padding-right: 4px;
+}
+
+#logo-text {
+  display: flex;
+  flex-direction: column;
+}
+#logo-text h2,
+#logo-text h4 {
+  margin: 0;
+}
+
+#responsive-button{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 6px 7px;
+    vertical-align: middle;
+}
+
+#header-top-right{
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+    display: none;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+
+nav li{
+    text-align:  center;
+    justify-content: space-around;
+    padding: 8px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.responsive{
+    display: block;
+}
+
+.social-icon {
+  height: 30px;
+  padding: 3px;
+}
+
+#header-bottom {
+  background-color: #999;
+  text-align: center;
+  padding: 5px;
+}
+
+/*Main Styles*/
+main{
+    background-color: white;
+    padding: 10px;
+}
+
+main div{
+    max-width: 100%;
+    background-color: #CCC;
+    padding: 10px;
+    border: 1px solid #AAA;
+    min-height: 150px;
+}
+
+main>div{
+    margin: 10px 0;
+}
+
+main div>h6{
+    margin: 0;
+}
+
+#spotlight-3, #main-join{
+    display: none;
+}
+
+/*Footer Styler*/
+footer {
+  display: flex;
+  text-align: center;
+}
+
+.footer-copy-spacer {
+  display: none;
+}
+
+#footer-bottom p{
+    margin: 2px;
+    padding: 0;
+    font-size: 12px;
+}
+
+.address p, .address h3{
+    font-style: italic;
+    margin: 4px;
+}
+
+.name{
+    font-weight: bold;
+}
+
+footer hr{
+    width: 100%;
+    border: 1px solid #888;
+}

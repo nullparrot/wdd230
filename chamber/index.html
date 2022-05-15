@@ -18,50 +18,88 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
   </head>
   <body>
+    <script src="js/navigation.js"></script>
     <header>
-        <div class="header-top">
-            <img src="http://placehold.jp/3d4070/ffffff/300x80.png?text=300x80%20Logo" alt="Header Placeholder Logo">
-            <nav>
-                <a href="#">Discover</a>
-                <a href="#">Directory</a>
-                <a href="#">Join</a>
-                <a href="#">Contact</a>
-            </nav>
-            <ahref="#"><img class="social-icon" src="images/facebook-round-color.svg" alt="Facebook Logo"></a>
-            <a href="#"><img class="social-icon" src="images/linkedin-round-color.svg" alt="Linked In Logo"></a>
+      <div id="header-top">
+        <div>
+          <img
+            id="header-logo"
+            src="http://placehold.jp/3d4070/ffffff/100x100.png?text=Logo"
+            alt="Placeholder Logo"
+          />
+          <div id="logo-text">
+            <h2>Timbuktu</h2>
+            <h4>Chamber of Commerce</h4>
+          </div>
         </div>
-        <div class="header-bottom">
-            <span id="currentDate"></span>
-        </div>
+        <div id="header-top-right"><div><a href="#"
+          ><img
+            class="social-icon"
+            src="images/facebook-round-color.svg"
+            alt="Facebook Logo"
+        /></a><a href="#"
+          ><img
+            class="social-icon"
+            src="images/linkedin-round-color.svg"
+            alt="Linked In Logo"
+        /></a></div><a id="responsive-button" href="#" onclick="toggleMenu()">&#9776</a></div>
+      </div><nav>
+        <ul>
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul> 
+      </nav>
+      <div id="header-bottom">
+        <span id="currentDate"></span>
+      </div>
     </header>
-    <main></main>
+    <main>
+      <div id="main-hero"><h6>Hero with site name and call to action</h6></div>
+      <div id="main-event"><h6>Event</h6></div>
+      <div id="main-weather"><h6>Weather</h6></div>
+      <div id="main-news"><h6>News Release</h6></div>
+      <div id="main-spotlights">
+        <div id="spotlight-1"><h6>Spotlight 1</h6></div>
+        <div id="spotlight-2"><h6>Spotlight 2</h6></div>
+        <div id="spotlight-3"><h6>Spotlight 3</h6></div>
+      </div>
+      <div id="main-join"><h6>Join</h6></div>
+    </main>
     <footer>
-        <section class="footer-top">
-            <div class="footer-top-left">
-                <img src="http://placehold.jp/3d4070/ffffff/100x100.png?text=100x100%0ALogo" alt="Placeholder Logo">
-                <div>
-                    <h3>Timbuktu Chamber of Commerce</h3>
-                    <p>10 Rue De La Paix</p>
-                    <p>Timbuktu, Mali 999</p>
-                </div>
-            </div>
-            <div class="footer-top-right">
-                <p>info@timbuktucc.org</p>
-                <p>+(223) 2070-2300</p>
-                <p>📍 Location Map</p>
-            </div>
-        </section>
-        <section class="footer-bottom">
-            <p class="footer-copyright">
-                &copy; <span id="year"></span> Andrew Weist
-              </p>
-              <p class="footer-timestamp">
-                Last Updated: <span id="last-updated"></span>
-              </p>
-            </section>
+      <section id="footer-top">
+        <div id="footer-top-left">
+          <img
+            src="http://placehold.jp/3d4070/ffffff/100x100.png?text=Logo"
+            alt="Placeholder Logo"
+          />
+          <div class="address">
+            <h3>Timbuktu Chamber of Commerce</h3>
+            <p>10 Rue De La Paix</p>
+            <p>Timbuktu, Mali 999</p>
+          </div>
+        </div>
+        <div id="footer-top-right">
+          <p>info@timbuktucc.org</p>
+          <p>+(223) 2070-2300</p>
+          <p>📍 Location Map</p>
+        </div>
+      </section>
+      <hr>
+      <section id="footer-bottom">
+          <p>&copy; <span id="year"></span> Timbuktu Chamber</p>
+          <p class="footer-copy-spacer">|</p>
+          <p class="name">Andrew Weist</p>
+          <p class="footer-copy-spacer">|</p>
+          <p>WDD 230 Project</p>
+          <p class="footer-copy-spacer">|</p>
+          <p>Last Modification: <span id="last-updated"></span></p>
+      </section>
     </footer>
     <script src="js/main.js"></script>
   </body>
