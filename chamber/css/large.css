@@ -6,7 +6,6 @@
         display: flex;
     }
     nav li{
-        list-style: none;
         flex: 1;
     }
     #responsive-button{
