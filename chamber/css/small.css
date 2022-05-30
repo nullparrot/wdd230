@@ -90,6 +90,7 @@ nav li{
     text-align:  center;
     justify-content: space-around;
     padding: 8px;
+    list-style: none;
 }
 
 nav li:hover{
