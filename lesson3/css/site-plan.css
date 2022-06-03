@@ -144,3 +144,41 @@ table td{
 table{
   border-collapse: collapse;
 }
+
+
+@media screen and (max-width: 1140px){
+  header{
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+
+
+}
+
+@media screen and (max-width: 570px){
+  header, nav ul{
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+
+  header h1{
+    margin: 5px 0;
+    border-bottom: 1px solid var(--soft-grey);
+  }
+
+  nav li{
+    padding: 10px;
+  }
+
+  nav{
+    margin-bottom: 5px;
+  }
+
+  nav a:hover{
+    border-bottom: 0;
+  }
+
+
+}

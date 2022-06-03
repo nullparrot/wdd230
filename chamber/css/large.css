@@ -1,6 +1,18 @@
+:root{
+    --header-font : 'Oswald', sans-serif;
+    --paragraph-font : 'IBM Plex Serif', serif;
+    --primary-color : #157A6E;
+    --secondary-color : #77B28C;
+    --soft-grey : #C2C5BB;
+    --tertiary-color : #499F68;
+    --accent : #B4654A;
+  }
+
 @media screen and (min-width: 900px) {
     nav{
         display: block;
+        grid-column: 2;
+        grid-row: 1;
     }
     nav ul{
         display: flex;
@@ -14,6 +26,7 @@
     #header-top-right{
         display: block;
         float: right;
+        grid-column: 3;
     }
 
     #header-top{

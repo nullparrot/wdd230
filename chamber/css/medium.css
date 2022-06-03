@@ -1,12 +1,16 @@
+:root{
+    --header-font : 'Oswald', sans-serif;
+    --paragraph-font : 'IBM Plex Serif', serif;
+    --primary-color : #157A6E;
+    --secondary-color : #77B28C;
+    --soft-grey : #C2C5BB;
+    --tertiary-color : #499F68;
+    --accent : #B4654A;
+  }
+
 @media screen and (min-width: 565px) {
     #header-logo {
-        height: 60px;
-    }
-    h2{
-        font-size: 36px;
-    }
-    h4{
-        font-size: 16px;
+        height: 80px;
     }
     #header-top-right{
         justify-content: space-between;
