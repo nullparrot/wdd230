@@ -3,18 +3,18 @@
 :root {
   --header-font: "Oswald", sans-serif;
   --paragraph-font: "IBM Plex Serif", serif;
-  --primary-color: #157a6e;
+  --primary-color: #37323E;
   --secondary-color: #77b28c;
   --soft-grey: #c2c5bb;
-  --tertiary-color: #499f68;
+  --tertiary-color: #404A44;
   --accent: #b4654a;
 }
 
 header,
 footer {
-  background-color: white;
+  background-color: var(--primary-color);
   padding: 8px;
-  color: black;
+  color: white;
   display: flex;
   flex-direction: column;
 }
@@ -67,16 +67,16 @@ h3{
 
 header h1{
   font-size: 40px;
-  color: black ;
   margin: 0;
+  color: white;
   text-align: center;
 }
 
 #responsive-button {
   font-size: 18px;
   text-decoration: none;
-  color: black;
-  border: 1px solid black;
+  color: white;
+  border: 1px solid white;
   padding: 6px 7px;
   vertical-align: middle;
 }
@@ -106,18 +106,16 @@ nav li {
   text-align: center;
   justify-content: space-around;
   padding: 8px;
-  padding-bottom: 5px;
   list-style: none;
-  border-bottom: 4px solid white;
 }
 
 nav li:hover {
-  border-bottom: 4px solid var(--tertiary-color);
+  background-color: var(--secondary-color);
 }
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: white;
   text-align: center;
 }
 
@@ -131,7 +129,8 @@ nav a {
 }
 
 #header-bottom {
-  border: 2px solid var(--tertiary-color);
+  /*border: 2px solid white;*/
+  background-color: var(--tertiary-color);
   text-align: center;
   padding: 5px;
 }
@@ -168,6 +167,10 @@ footer {
   display: flex;
   text-align: center;
   background-color: var(--secondary-color);
+}
+
+footer img{
+  height: 90px;
 }
 
 footer p{

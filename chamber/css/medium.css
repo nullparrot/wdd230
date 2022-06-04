@@ -1,19 +1,11 @@
-:root{
-    --header-font : 'Oswald', sans-serif;
-    --paragraph-font : 'IBM Plex Serif', serif;
-    --primary-color : #157A6E;
-    --secondary-color : #77B28C;
-    --soft-grey : #C2C5BB;
-    --tertiary-color : #499F68;
-    --accent : #B4654A;
-  }
 
-@media screen and (min-width: 565px) {
+
+@media screen and (min-width: 600px) {
     #header-logo {
-        height: 80px;
+        height: 90px;
     }
-    #header-top-right{
-        justify-content: space-between;
+    #logo-text{
+        display: inline-block;
     }
     #main-spotlights{
         display: flex;
@@ -37,8 +29,9 @@
     #footer-top{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
+        padding: 40px 0;
     }
     #footer-top-left{
         display: flex;
@@ -48,10 +41,6 @@
     .address{
         padding-left: 10px;
         max-width: 200px;
-    }
-
-    #footer-top-right{
-        padding: 40px;
     }
     #footer-top-right p{
         margin: 4px1;
