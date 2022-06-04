@@ -1,39 +1,43 @@
 /*General Styles*/
-:root{
-  --header-font : 'Oswald', sans-serif;
-  --paragraph-font : 'IBM Plex Serif', serif;
-  --primary-color : #157A6E;
-  --secondary-color : #77B28C;
-  --soft-grey : #C2C5BB;
-  --tertiary-color : #499F68;
-  --accent : #B4654A;
+:root {
+  --header-font: "Oswald", sans-serif;
+  --paragraph-font: "IBM Plex Serif", serif;
+  --primary-color: #157a6e;
+  --secondary-color: #77b28c;
+  --soft-grey: #c2c5bb;
+  --tertiary-color: #499f68;
+  --accent: #b4654a;
 }
 
-body{
+body {
   font-family: var(--paragraph-font);
   font-size: 14px;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--header-font);
 }
 
-h1{
+h1 {
   color: var(--accent);
   font-size: 32px;
 }
 
-h2{
+h2 {
   font-size: 24px;
 }
 
-h3{
+h3 {
   font-size: 18px;
 }
 
-
 /* Header Styles */
-header{
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,144 +45,141 @@ header{
   border-bottom: 1px solid var(--soft-grey);
 }
 
-header h1, .header h1{
+header h1,
+.header h1 {
   font-family: var(--header-font);
   font-size: 40px;
   color: black;
 }
 
-nav ul{
+nav ul {
   display: flex;
   flex-direction: row;
 }
 
-nav li{
+nav li {
   list-style: none;
   padding: 0 10px;
 }
 
-nav a{
+nav a {
   text-decoration: none;
   padding: 10px 0;
 }
 
-nav a, .nav{
+nav a,
+.nav {
   color: black;
   font-size: 18px;
   font-family: var(--paragraph-font);
 }
 
-nav a:hover{
+nav a:hover {
   border-bottom: 2px solid var(--tertiary-color);
 }
 
 /* Main Styles*/
-main{
+main {
   padding: 1em;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-#logo-plan{
+#logo-plan {
   height: 200px;
 }
 
 /* Footer Styles*/
 
-footer{
+footer {
   text-align: center;
   border-top: 1px solid var(--soft-grey);
 }
 
-footer, .footer{
+footer,
+.footer {
   font-size: 16px;
   font-family: var(--paragraph-font);
 }
 
-
 /* Color Scheme https://coolors.co/37323e-615e66-404a44-c2c5bb-4c6356 */
-#color-scheme li{
+#color-scheme li {
   line-height: 150%;
 }
 
-#color-scheme-primary{
+#color-scheme-primary {
   background-color: var(--primary-color);
   color: white;
   padding: 0 3px;
 }
 
-#color-scheme-secondary{
+#color-scheme-secondary {
   background-color: var(--secondary-color);
   color: white;
   padding: 0 3px;
 }
 
-#color-scheme-tertiary-color{
+#color-scheme-tertiary-color {
   background-color: var(--tertiary-color);
   color: white;
   padding: 0 3px;
 }
 
-#color-scheme-accent{
+#color-scheme-accent {
   background-color: var(--accent);
   color: white;
   padding: 0 3px;
 }
 
-.nav-accent{
+.nav-accent {
   background-color: var(--tertiary-color);
 }
 
-#soft-grey-fill{
+#soft-grey-fill {
   background-color: var(--soft-grey);
 }
 
-
 /* Tables */
-table td{
+table td {
   border: 1px solid var(--soft-grey);
   padding: 2px 8px;
   min-width: 50px;
 }
 
-table{
+table {
   border-collapse: collapse;
 }
 
-
-@media screen and (max-width: 1140px){
-  header{
+@media screen and (max-width: 1140px) {
+  header {
     flex-direction: column;
     text-align: center;
     padding: 0;
   }
-
-
 }
 
-@media screen and (max-width: 570px){
-  header, nav ul{
+@media screen and (max-width: 570px) {
+  header,
+  nav ul {
     flex-direction: column;
     text-align: center;
     padding: 0;
   }
 
-  header h1{
+  header h1 {
     margin: 5px 0;
     border-bottom: 1px solid var(--soft-grey);
   }
 
-  nav li{
+  nav li {
     padding: 10px;
   }
 
-  nav{
+  nav {
     margin-bottom: 5px;
   }
 
-  nav a:hover{
+  nav a:hover {
     border-bottom: 0;
   }
-
-
 }

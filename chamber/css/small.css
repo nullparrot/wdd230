@@ -3,10 +3,10 @@
 :root {
   --header-font: "Oswald", sans-serif;
   --paragraph-font: "IBM Plex Serif", serif;
-  --primary-color: #37323E;
+  --primary-color: #37323e;
   --secondary-color: #77b28c;
   --soft-grey: #c2c5bb;
-  --tertiary-color: #404A44;
+  --tertiary-color: #404a44;
   --accent: #b4654a;
 }
 
@@ -23,20 +23,25 @@ body {
   font-family: var(--paragraph-font);
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--header-font);
 }
 
-h1{
+h1 {
   font-size: 32px;
   color: var(--accent);
 }
 
-h2{
+h2 {
   font-size: 24px;
 }
 
-h3{
+h3 {
   font-size: 18px;
 }
 
@@ -61,7 +66,7 @@ h3{
   padding-right: 4px;
 }
 
-header h1{
+header h1 {
   font-size: 20px;
   margin: 0;
   color: white;
@@ -166,12 +171,12 @@ footer {
   background-color: var(--primary-color);
 }
 
-footer img{
+footer img {
   height: 90px;
 }
 
-footer p{
-  font-size: 16px ;
+footer p {
+  font-size: 16px;
 }
 
 .footer-copy-spacer {
