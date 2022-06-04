@@ -23,7 +23,6 @@
 
     #header-top{
         grid-template-columns: 317px 1fr 80px;
-        align-items: end;
     }
     #header-top-right div{
         display: flex;

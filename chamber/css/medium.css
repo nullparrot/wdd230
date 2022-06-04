@@ -4,9 +4,9 @@
     #header-logo {
         height: 90px;
     }
-    #logo-text{
-        display: inline-block;
-    }
+    header h1{
+        font-size: 40px;
+      }
     #main-spotlights{
         display: flex;
         flex-direction: row;
