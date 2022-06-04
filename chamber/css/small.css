@@ -202,3 +202,8 @@ footer hr {
   width: 100%;
   border: 1px solid white;
 }
+
+footer a{
+  text-decoration: none;
+  color: white;
+}
